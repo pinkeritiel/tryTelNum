@@ -35,7 +35,7 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
         alert('device ready');
-        var telephonesNumber = cordova.require("cordova/plugin/telephonenumber");
+        var telephoneNumber = cordova.require("cordova/plugin/telephonenumber");
         alert('ready to get');
         telephoneNumber.get(
             function(result) { alert('result = ' + result);}, 
