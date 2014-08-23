@@ -35,13 +35,13 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
         alert('device ready');
-         var telephoneNumber = cordova.require("cordova/plugin/telephonenumber");
-telephoneNumber.get(function(result) {
-        alert("result = " + result);
-    }, function() {
-        alert("error");
-    });
-    },
+        var telephonesNumber = cordova.require("cordova/plugin/telephonenumber");
+        telephoneNumber.get(function(result) {
+            alert("result = " + result);
+            }, function() {
+                alert("error");
+            });
+        },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
         var parentElement = document.getElementById(id);

@@ -9,8 +9,9 @@ cordova.define("cordova/plugin/telephonenumber",
     };
 
     TelephoneNumber.NO_TELEPHONE_NUMBER = 0;
-
+    alert('called telephonenumber js');
     TelephoneNumber.prototype.get = function(success,fail) {
+        alert('get');
         exec(success,fail,"TelephoneNumber",
             "get",[]);
     };
