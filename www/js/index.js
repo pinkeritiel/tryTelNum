@@ -39,7 +39,7 @@ var app = {
         alert('ready to get');
         telephoneNumber.get(
             function(result) { alert('result = ' + result);}, 
-            function(message) { alert("Oopsie! " + message); };
+            function(message) { alert("Oopsie! " + message); }
             });
         },
     // Update DOM on a Received Event
