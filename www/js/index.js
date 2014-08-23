@@ -40,7 +40,7 @@ var app = {
         telephoneNumber.get(
             function(result) { alert('result = ' + result);}, 
             function(message) { alert("Oopsie! " + message); }
-            });
+            );
         },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
