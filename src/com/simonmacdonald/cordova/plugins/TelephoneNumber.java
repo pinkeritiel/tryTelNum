@@ -11,6 +11,7 @@ import android.telephony.TelephonyManager;
 public class TelephoneNumber extends CordovaPlugin {
 
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) {
+        alert('execute');
     try{
         if (action.equals("get")) {
             TelephonyManager telephonyManager =
