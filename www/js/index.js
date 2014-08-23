@@ -38,9 +38,9 @@ var app = {
         var telephonesNumber = cordova.require("cordova/plugin/telephonenumber");
         alert('ready to get');
         telephoneNumber.get(function(result) {
-            alert("result = " + result);
+            alert('result = ' + result);
             }, function() {
-                alert("error");
+                alert('error');
             });
         },
     // Update DOM on a Received Event
